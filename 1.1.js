@@ -42,7 +42,7 @@ let vid3p2 = new Vue({
 	{
 		cleanerUrl: function()
 		{
-			this.cleanUrl = this.url.replace(/^https?\/\//, '').replace(/\/$/,'')
+			this.cleanUrl = this.url.replace(/^https?:\/\//, '').replace(/\/$/,'')
 		}
 	},
 
