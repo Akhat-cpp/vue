@@ -1,0 +1,59 @@
+.appp
+{	
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.button
+{
+	width: 150px;
+	display: flex;
+	justify-content: center;
+}
+/**/
+.appp1
+{
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+}	
+.dropDown1
+{
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	background-color: #954466;
+}
+.dropDownCol
+{
+	flex-direction: column;
+	width: 300px;
+}
+.elements
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #954456;
+	border-radius: 10px;
+}
+.element
+{
+	display: flex;
+	justify-content: center;
+}
+.rowEl
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.imgRadius
+{
+	border-radius: 10px;
+	width: 30px;
+	height: 30px;
+}
+.invisible
+{
+	display: none;
+}
