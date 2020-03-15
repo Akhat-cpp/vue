@@ -14,38 +14,42 @@
 .appp1
 {
 	padding-top: 100px;
+}
+.appp11
+{
 	display: flex;
 	justify-content: center;
 }	
 .dropDown1
 {
-	width: 300px;
+	width: 150px;
 	display: flex;
 	justify-content: center;
-	background-color: #954466;
+	background-color: #999999;
+	border-radius: 20px;
 }
 .dropDownCol
 {
 	flex-direction: column;
-	width: 300px;
+	width: 150px;
 }
 .elements
 {
 	display: flex;
 	flex-direction: column;
-	background-color: #954456;
+	background-color: #999989;
 	border-radius: 10px;
 }
 .element
 {
 	display: flex;
 	justify-content: center;
+	padding-left: 10px;
 }
 .rowEl
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 }
 .imgRadius
 {
