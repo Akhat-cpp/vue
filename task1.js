@@ -6,7 +6,7 @@
 // })
 let app1 = new Vue
 ({
-    el: '#app1',
+    el: "#app1",
     data: 
 	{
 		visibleTOrF: true,
@@ -37,3 +37,25 @@ let app1 = new Vue
     	}
     }
 });
+let app2 = new Vue
+({
+	el: "#app2",
+	data:
+	{
+		visibleTOrF2: true,
+		items:
+		[
+			{message: 'a'},
+			{message: 'as'},
+			{message: 'asd'},
+			{message: 'asdf'}
+		],
+	},
+	methods:
+	{
+		visiability:function()
+		{
+			this.visibleTOrF2 = !this.visibleTOrF2
+		},
+	},
+})

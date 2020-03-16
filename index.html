@@ -16,6 +16,7 @@
 			<option>Sam</option>
 		</select>
 	</div>
+	<!--  -->
 	<div id="app1" class="appp1">
 		<div class="appp11">
 			<div class=dropDownCol>
@@ -41,6 +42,21 @@
 		<div v-bind:class="{invisible: elementLink2}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, ipsa dolor provident ducimus perferendis! Sit tenetur dolor corporis ab nostrum, ex repudiandae beatae cupiditate accusamus ducimus quae facere autem est in deleniti dignissimos recusandae eum doloribus quasi eligendi provident architecto molestias quas voluptate dolores. A, distinctio, sed! Fugit ipsam tenetur asperiores explicabo saepe totam, maxime, consectetur dolor vero impedit hic beatae ut ducimus possimus neque enim culpa. Eveniet expedita magnam, quas aspernatur repellendus voluptatum dolores autem! Deleniti, voluptatibus excepturi. Sed dolorum soluta necessitatibus pariatur natus facilis distinctio, delectus labore eius neque vel obcaecati excepturi ea, consequatur, quas beatae magnam, voluptates perferendis itaque doloribus illum repudiandae quisquam fugit temporibus voluptatum! Voluptatibus quia minus similique! Dicta quisquam porro illo repellat ullam ab magnam voluptatibus saepe ea obcaecati non necessitatibus ipsum incidunt consectetur modi, veniam fugiat. Corrupti minima totam, dolores quidem voluptate ipsam enim voluptates nam ut. Rem eos deleniti sequi molestiae blanditiis ipsam voluptate, obcaecati natus. Quaerat, quos magnam in magni dicta facilis voluptas dignissimos voluptatibus tenetur, error porro est? Illum, officiis, sunt. Magnam assumenda veritatis perferendis, accusamus reprehenderit ex asperiores nostrum aliquam in ad non quos necessitatibus cum ullam sint neque impedit distinctio recusandae, atque architecto, dignissimos repudiandae, aut velit facere voluptas! Modi porro eaque dignissimos doloremque id, molestiae nisi maxime dicta ullam, dolorem ex veritatis iure asperiores harum quo nobis. Deleniti voluptate delectus minus optio reiciendis, provident earum. Cumque a ipsam culpa, at quam eligendi impedit, nobis similique exercitationem. Provident iusto nam obcaecati accusantium excepturi, adipisci modi assumenda eveniet fuga quos quis nesciunt porro numquam veritatis, eligendi laudantium quod nisi sit consequuntur perspiciatis harum vel, rem? Qui, molestiae quis soluta at veritatis aut officiis iusto adipisci consequatur beatae quasi dicta laudantium cupiditate a animi fugit. Nisi laudantium, voluptate impedit illum sit omnis quidem eos deserunt nihil, amet excepturi sed pariatur.</div>
 		<div v-bind:class="{invisible: elementLink3}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatum inventore autem quos explicabo doloremque iure velit, sunt repudiandae ullam cum id natus. Quam doloremque exercitationem asperiores fugit, delectus nostrum fuga placeat maiores cupiditate dolores consectetur quos quis iure amet aliquid laborum molestias blanditiis eius ullam ut esse dignissimos. Nulla eos temporibus consequuntur labore ad ut cumque distinctio harum dolores rem qui cupiditate, maiores voluptatum ullam ipsa, eligendi. Quasi consectetur molestiae eaque quam laborum officiis harum similique debitis alias, quae! Nihil atque ipsum velit rem, quisquam minus est, tempore unde iste laborum, dolorem, nam earum ullam libero sint illum magnam obcaecati sequi facere magni sapiente dolore! Delectus eligendi ullam minima adipisci perspiciatis, unde consequatur eaque, aut quas ex placeat dolor iste commodi nisi sint fugiat ut corporis culpa repellat vitae saepe minus, aliquam quos. Porro molestiae error, odio nulla sint vitae saepe doloribus soluta fugiat? Ab fugit illum similique eius odit quisquam laboriosam deleniti, commodi vitae amet distinctio iure ullam dolores delectus aspernatur, animi modi fugiat obcaecati debitis officiis temporibus assumenda ipsam reprehenderit eveniet. Quod amet voluptatibus perspiciatis, quibusdam ipsum, nesciunt quidem doloribus rerum pariatur voluptatum dicta ad, culpa autem aliquam voluptas provident quae cumque dignissimos delectus. Illo, ratione assumenda veniam necessitatibus nulla, quaerat doloremque, fugiat cupiditate delectus voluptatum quas porro vero amet deleniti facilis placeat eius quis laborum. Soluta quia repudiandae aliquam perspiciatis. Dolorum assumenda doloremque numquam vero nostrum eos voluptatum ratione similique, ullam, a iste excepturi voluptates incidunt fuga totam magni vel eveniet nemo! Fugit nulla facilis non nihil et ad consequatur doloribus vel odit corrupti reprehenderit obcaecati veniam commodi quisquam, labore possimus ducimus reiciendis quo tempore tempora soluta iusto iste nam, ut enim. Sint alias deserunt, numquam quas, aperiam vel. Earum alias explicabo dolorum recusandae fuga quos eius numquam ipsum commodi iure vero, animi, beatae excepturi error.</div>
 		
+	</div>
+	<!--  -->
+	<div id="app2" class="appp2">
+		<div class="appp22">
+			<div class="menuPlusItems2">
+				<p v-on:click="visiability">Show details</p>
+				<p v-for="item in items" v-bind:class="{invisible2: visibleTOrF2}" class="itemsTxt2">
+					{{ item.message }}
+				</p>
+			</div>
+		</div>
+		<div class="info2">
+			
+		</div>	
+
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
