@@ -47,7 +47,10 @@
 	<div id="app2" class="appp2">
 		<div class="appp22">
 			<div class="menuPlusItems2">
-				<p v-on:click="visiability">Show details</p>
+				<div v-on:click="visiability" class="rowShowDetails2">
+					<p class="elementShow2">Show details</p>
+					<p class="elementShowDetStrel">▼</p>
+				</div>
 				<p v-for="item in items" v-bind:class="{invisible2: visibleTOrF2}" class="itemsTxt2">
 					{{ item.message }}
 				</p>
