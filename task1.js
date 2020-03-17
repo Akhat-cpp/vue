@@ -45,10 +45,22 @@ let app2 = new Vue
 		visibleTOrF2: true,
 		items:
 		[
-			{message: 'a'},
-			{message: 'as'},
-			{message: 'asd'},
-			{message: 'asdf'}
+			{
+				message: 'a',
+				link: '#a',
+			},
+			{
+				message: 'as',
+				link: '#s'
+			},
+			{
+				message: 'asd',
+				link: '#d'
+			},
+			{
+				message: 'asdf',
+				link: '#f',
+			},
 		],
 	},
 	methods:
