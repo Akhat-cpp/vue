@@ -92,6 +92,7 @@
 .itemsTxt2
 {
 	padding-left: 5px;
+	color: black;
 }
 .rowShowDetails2
 {
@@ -106,4 +107,8 @@
 .elementShowDetStrel
 {
 	padding-right: 5px;
+}
+A
+{
+	text-decoration: none;
 }

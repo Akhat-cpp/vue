@@ -69,5 +69,9 @@ let app2 = new Vue
 		{
 			this.visibleTOrF2 = !this.visibleTOrF2
 		},
+		closeMenu:function()
+		{
+			this.visibleTOrF2 = true
+		},
 	},
 })
