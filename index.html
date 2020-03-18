@@ -51,7 +51,7 @@
 					<p class="elementShow2">Show details</p>
 					<p class="elementShowDetStrel">▼</p>
 				</div>
-				<a v-for="item in items" :href="item.link" v-bind:class="{invisible2: visibleTOrF2}" class="itemsTxt2" v-on:click="closeMenu">{{ item.message }}</a>
+				<a v-for="item in items" :href="item.link" v-bind:class="{invisible2: visibleTOrF2}" class="itemsTxt2" v-on:click="closeMenu" onblur="app2.closeAllMenu()">{{ item.message }}</a>
 			</div>
 		</div>
 		<div class="info2">
