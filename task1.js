@@ -75,8 +75,7 @@ let app2 = new Vue
 		},
 		closeAllMenu:function()
 		{
-			this.visibleTOrF2 = !this.visibleTOrF2,
-			alert('f')
+			this.visibleTOrF2 = !this.visibleTOrF2
 		},
 	},
 })
