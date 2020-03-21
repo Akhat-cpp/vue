@@ -43,6 +43,9 @@ let app2 = new Vue
 	data:
 	{
 		visibleTOrF2: true,
+		border22: false,
+		focus22: false,
+		onFocus22: true,
 		items:
 		[
 			{
@@ -65,17 +68,22 @@ let app2 = new Vue
 	},
 	methods:
 	{
-		visiability:function()
-		{
-			this.visibleTOrF2 = !this.visibleTOrF2
+		visibleMenu:function()
+		{			
+			this.visibleTOrF2 = !this.visibleTOrF2,
+			this.border22 = !this.border22
 		},
-		closeMenu:function()
-		{
-			this.visibleTOrF2 = true
+		invisibleMenu:function()
+		{			
+			this.visibleTOrF2 = true,
+			this.border22 = false,
+			this.focus22 = false,
+			this.onFocus22 = true
 		},
-		closeAllMenu:function()
+		focusElem:function()
 		{
-			this.visibleTOrF2 = !this.visibleTOrF2
-		},
+			this.focus22 = true,
+			this.onFocus22 = false
+		}
 	},
 })

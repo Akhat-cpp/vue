@@ -71,6 +71,20 @@
 {
 	display: none;
 }
+.border2
+{
+	border: 3px solid black;
+	border-bottom-color: gray;
+	border-radius: 10px;
+}
+.focus2
+{
+	background-color: gray;
+}
+.onFocus2
+{
+	background-color: #F8F9FA;
+}
 .appp2
 {
 	padding-top: 50px;
@@ -83,11 +97,10 @@
 .menuPlusItems2
 {
 	flex-direction: column;
-	background-color: #998999;
-	border-radius: 12px;
-	width: 250px;
+	width: 150px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 10px;
 }
 .itemsTxt2
 {
@@ -104,6 +117,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	height: 37.2px;
 }
 .elementShow2
 {
