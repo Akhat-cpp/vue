@@ -46,6 +46,7 @@ let app2 = new Vue
 		border22: false,
 		focus22: false,
 		onFocus22: true,
+		showDetails: "Show details",
 		items:
 		[
 			{
