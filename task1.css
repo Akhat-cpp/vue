@@ -1,3 +1,8 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
 .appp
 {	
 	padding-top: 50px;
@@ -11,7 +16,7 @@
 	justify-content: center;
 }
 /**/
-.appp1
+/*.appp1
 {
 	padding-top: 100px;
 }
@@ -60,11 +65,25 @@
 .invisible
 {
 	display: none;
-}
+}*/
 /**/
 .invisible2
 {
 	display: none;
+}
+.border2
+{
+	border: 3px solid black;
+	border-bottom-color: gray;
+	border-radius: 10px;
+}
+.focus2
+{
+	background-color: gray;
+}
+.onFocus2
+{
+	background-color: #F8F9FA;
 }
 .appp2
 {
@@ -78,10 +97,52 @@
 .menuPlusItems2
 {
 	flex-direction: column;
-	background-color: #998999;
-	border-radius: 12px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	cursor: pointer;
 }
 .itemsTxt2
 {
 	padding-left: 5px;
+	color: black;
+}
+.itemsTxt2:hover
+{
+	background-color: blue;
+	text-decoration: none;
+}
+.rowShowDetails2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 37.2px;
+}
+.elementShow2
+{
+	padding-left: 5px;
+}
+.elementShowDetStrel
+{
+	padding-right: 5px;
+}
+#top2
+{
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	right: 35px;
+	bottom: 35px;
+	cursor: pointer;
+}
+A
+{
+	text-decoration: none;
+}
+P
+{
+	padding: 0px;
+	margin: 0px;!
 }
