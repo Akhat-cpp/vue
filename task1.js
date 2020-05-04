@@ -95,7 +95,7 @@ let app2 = new Vue
 			setTimeout(function run() 
 			{
 				console.log(app2.ycoord);
-  				if(app2.ycoord > 100)
+  				if(app2.ycoord > 70)
   				{
   					console.log("fd")
   					app2.ycoord -= 100;
