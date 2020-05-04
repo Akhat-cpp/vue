@@ -37,12 +37,16 @@
 //     	}
 //     }
 // });
+let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
 let app2 = new Vue
 ({
 	el: "#app2",
 	data:
-	{
+	{	
+		ycoord: 0,
 		visibleTOrF2: true,
+		visibleButtonUP: true,
 		border22: false,
 		focus22: false,
 		onFocus22: true,
@@ -85,6 +89,39 @@ let app2 = new Vue
 		{
 			this.focus22 = true,
 			this.onFocus22 = false
-		}
+		},
+		scroll:function()
+		{
+			setTimeout(function run() 
+			{
+				console.log(app2.ycoord);
+  				if(app2.ycoord > 100)
+  				{
+  					console.log("fd")
+  					app2.ycoord -= 100;
+  					window.scrollTo(0, app2.ycoord);
+  					setTimeout(run, 25);	
+  				};
+  			}, 100)
+			// while(this.ycoord > 70)
+			// {
+			// 	console.log(this.ycoord)
+			// 	this.ycoord -= 50;
+			// 	setTimeout(() => window.scrollTo(0, this.ycoord), 100);
+			// }
+		},
 	},
 })
+window.onscroll = function() 
+{
+	posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	app2.ycoord = posTop;
+	if(posTop > 100)
+	{
+		app2.visibleButtonUP = false;
+	}
+	else
+	{
+		app2.visibleButtonUP = true;
+	}
+}

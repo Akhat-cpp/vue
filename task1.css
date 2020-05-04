@@ -101,6 +101,7 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
+	cursor: pointer;
 }
 .itemsTxt2
 {
@@ -126,6 +127,15 @@
 .elementShowDetStrel
 {
 	padding-right: 5px;
+}
+#top2
+{
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	right: 35px;
+	bottom: 35px;
+	cursor: pointer;
 }
 A
 {
