@@ -137,6 +137,10 @@
 	bottom: 35px;
 	cursor: pointer;
 }
+#a{}
+#s{color: red}
+#d{color: blue}
+#f{color: violet}
 A
 {
 	text-decoration: none;

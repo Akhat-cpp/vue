@@ -44,6 +44,9 @@ let app2 = new Vue
 	el: "#app2",
 	data:
 	{	
+		tempForNumberScrollJakor: 0,
+		elem: null,
+		ycoordMenu: 0,
 		ycoord: 0,
 		visibleTOrF2: true,
 		visibleButtonUP: true,
@@ -55,19 +58,19 @@ let app2 = new Vue
 		[
 			{
 				message: 'a',
-				link: '#a',
+				link: 'a',
 			},
 			{
 				message: 'as',
-				link: '#s'
+				link: 's'
 			},
 			{
 				message: 'asd',
-				link: '#d'
+				link: 'd'
 			},
 			{
 				message: 'asdf',
-				link: '#f',
+				link: 'f',
 			},
 		],
 	},
@@ -90,17 +93,29 @@ let app2 = new Vue
 			this.focus22 = true,
 			this.onFocus22 = false
 		},
+		scrollToJakor:function(link)
+		{
+			this.elem = document.getElementById(link),
+			this.ycoordMenu = getYCoords(this.elem),
+			setTimeout(function downn()
+			{
+				if((app2.ycoordMenu - (window.pageYOffset+250)) > 70 && app2.tempForNumberScrollJakor != (app2.ycoordMenu - window.pageYOffset))
+				{
+					app2.tempForNumberScrollJakor = (app2.ycoordMenu - window.pageYOffset);
+					window.scrollTo(0, window.pageYOffset+100);
+					setTimeout(downn, 25)
+				};
+			},100)
+		},
 		scroll:function()
 		{
-			setTimeout(function run() 
+			setTimeout(function upp() 
 			{
-				console.log(app2.ycoord);
   				if(app2.ycoord > 70)
   				{
-  					console.log("fd")
   					app2.ycoord -= 100;
   					window.scrollTo(0, app2.ycoord);
-  					setTimeout(run, 25);	
+  					setTimeout(upp, 25);	
   				};
   			}, 100)
 			// while(this.ycoord > 70)
@@ -110,7 +125,9 @@ let app2 = new Vue
 			// 	setTimeout(() => window.scrollTo(0, this.ycoord), 100);
 			// }
 		},
+		
 	},
+	
 })
 window.onscroll = function() 
 {
@@ -124,4 +141,9 @@ window.onscroll = function()
 	{
 		app2.visibleButtonUP = true;
 	}
+}
+function getYCoords(elem) 
+{
+ 	let temp = elem.getBoundingClientRect();
+	return(temp.top + window.pageYOffset);
 }
